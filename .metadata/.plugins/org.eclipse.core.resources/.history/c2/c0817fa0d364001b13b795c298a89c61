@@ -1,0 +1,52 @@
+package desafio2;
+
+	public class Livro extends Produto {
+		
+		private String autor;
+		private String tema;
+		private int qtdPag;
+		
+		public Livro() {}
+		public Livro(String autor, String tema, int qtdPag) {
+			this.setNome(nome);
+			this.setPreco(preco);
+			this.setQtd(qtd);
+			
+			this.autor = autor;
+			this.tema = tema;
+			this.qtdPag = qtdPag;
+		}
+		
+		public double calcularImposto() {
+			if(this.tema.equals("educativo")) {
+				return 0;
+		}else {
+			return this.getPreco() * 0.1;
+		}	
+	}
+		
+		public String getAutor() {
+			return autor;
+		}
+		
+		public void setAutor(String autor) {
+			this.autor = autor;
+		}
+		
+		public String getTema() {
+			return tema;
+		}
+		
+		public void setTema(String tema) {
+			this.tema = tema;
+		}
+		
+		public int getQtdPag() {
+			return qtdPag;
+		}
+		
+		public void setQtd(int qtdPag) {
+			this.qtdPag = qtdPag;
+		}
+		
+}

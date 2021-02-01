@@ -1,0 +1,27 @@
+package desafio1;
+
+import java.util.Scanner;
+
+public class Bhaskara {
+	
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.println("Digite o valor de A: ");
+		float a = entrada.nextFloat();
+		
+		System.out.println("Digite o valor de B: ");
+		float b = entrada.nextFloat();
+		
+		System.out.println("Digite o valor de C: ");
+		float c = entrada.nextFloat();
+		
+		System.out.print(a);
+		System.out.print(b);
+		System.out.print(c);
+		
+		entrada.close();
+	}
+
+}

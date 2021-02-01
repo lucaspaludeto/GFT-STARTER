@@ -1,0 +1,61 @@
+package desafio2;
+
+public class VideoGame extends Produto {
+	
+	private String marca;
+	private String modelo;
+	private boolean isUsado;
+	
+	public VideoGame() {}
+	public VideoGame(String marca, String modelo, boolean isUsado) {
+		this.setNome(nome);
+		this.setPreco(preco);
+		this.setQtd(qtd);
+		
+		this.marca = marca;
+		this.modelo = modelo;
+		this.isUsado = isUsado;
+	}
+	
+	public double calcularImposto() {
+		if(this.isUsado) {
+			return this.getPreco() * 0.25;
+		}else {
+			return this.getPreco() * 0.45;
+		}
+	}
+	
+	public String getMarca() {
+		return marca;
+	}
+	
+	public void setMarca(String marca) {
+		this.marca = marca;
+	}
+	
+	public String getModelo() {
+		return modelo;
+	}
+	
+	public void setModelo(String modelo) {
+		this.modelo = modelo;
+	}
+	
+	public boolean getisUsado() {
+		return isUsado;
+	}
+	
+	public void setisUsado(boolean isUsado) {
+		this.isUsado = isUsado;
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

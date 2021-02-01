@@ -1,0 +1,31 @@
+package desafio1;
+
+import java.util.Scanner;
+
+public class Bhaskara {
+	
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.println("Digite o valor de A: ");
+		float a = entrada.nextFloat();
+		if(a < 0) {
+			System.out.println("Impossível calcular");
+		}
+		
+		System.out.println("Digite o valor de B: ");
+		float b = entrada.nextFloat();
+		
+		System.out.println("Digite o valor de C: ");
+		float c = entrada.nextFloat();
+		
+		System.out.println(a);
+		System.out.println(b);
+		System.out.println(c);
+		
+		
+		entrada.close();
+	}
+
+}
